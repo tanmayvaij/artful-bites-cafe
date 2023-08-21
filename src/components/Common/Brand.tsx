@@ -1,9 +1,5 @@
-import React from "react";
-import { Dancing_Script } from "next/font/google";
-import Image from "next/image";
-import Link from "next/link";
-
-const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "700" });
+import { FC } from "react";
+import { Link } from "react-router-dom";
 
 interface BrandProps {
   size: "sm" | "md" | "lg";
@@ -26,7 +22,7 @@ const sizeMap = {
   },
 };
 
-export const Brand: React.FC<BrandProps> = ({ size, iconOnly, textOnly }) => {
+export const Brand: FC<BrandProps> = ({ size, iconOnly, textOnly }) => {
   if (iconOnly && textOnly) {
     throw new Error(
       "Cannot use both iconOnly and textOnly props simultaneously, only one of them is allowed at time."
@@ -34,16 +30,14 @@ export const Brand: React.FC<BrandProps> = ({ size, iconOnly, textOnly }) => {
   }
 
   return (
-    <Link href="/" className="text-orange-500 flex items-center">
+    <Link to="/" className="text-orange-500 flex items-center">
       {!iconOnly && (
-        <span
-          className={`${dancingScript.className} ${sizeMap[size].textSize}`}
-        >
+        <span className={`font-dancing-script ${sizeMap[size].textSize}`}>
           Artful Bites Cafe
         </span>
       )}
       {!textOnly && (
-        <Image
+        <img
           className="ml-2"
           src="/latte-art.png"
           width={sizeMap[size].logoSize}

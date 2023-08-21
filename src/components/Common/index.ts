@@ -1,5 +1,5 @@
-export { Brand } from "./Brand"
-export { Footer } from "./Footer"
-export { Clickable } from "./Buttons/Clickable"
-export { Navigatable } from "./Buttons/Navigatable"
-export { Navbar } from "./Navbar"
+export * from "./Brand";
+export * from "./Footer";
+export * from "./Buttons/Clickable";
+export * from "./Buttons/Navigatable";
+export * from "./Navbar";

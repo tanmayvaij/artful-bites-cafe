@@ -1,2 +1,2 @@
-export * from "./categoriesData"
-export * from "./navbarNavigationData"
+export * from "./categoriesData";
+export * from "./navbarNavigationData";

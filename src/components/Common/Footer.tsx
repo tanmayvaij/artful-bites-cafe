@@ -1,16 +1,16 @@
-import React from "react";
-import Link from "next/link";
-import { Brand } from "@/components/Common";
+import { FC } from "react";
+import { Link } from "react-router-dom";
+import { Brand } from ".";
 
-export const Footer: React.FC<{}> = () => {
+export const Footer: FC<{}> = () => {
   return (
     <div className="flex items-center justify-between px-10 border p-5">
       <Brand size="sm" />
       <div className="flex items-center space-x-4">
-        <Link className="text-xs" href="/terms-of-service">
+        <Link className="text-xs" to="/terms-of-service">
           Terms of Service
         </Link>
-        <Link className="text-xs" href="/privacy-policy">
+        <Link className="text-xs" to="/privacy-policy">
           Privacy & Policy
         </Link>
       </div>

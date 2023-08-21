@@ -1,8 +1,8 @@
-import React from "react";
-import { categoriesData } from "@/data";
+import { FC } from "react";
 import { ItemsCategoryCard } from "./ItemsCategoryCard";
+import { categoriesData } from "../../data";
 
-export const ItemsCategory: React.FC<{}> = () => {
+export const ItemsCategory: FC<{}> = () => {
   return (
     <div className="flex items-center justify-center flex-col py-10">
       <h2 className="text-2xl font-semibold mb-5">Our Top Categories</h2>

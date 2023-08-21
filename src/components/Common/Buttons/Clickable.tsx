@@ -1,11 +1,11 @@
-import React from "react";
+import { FC } from "react";
 import { BaseButtonProps, BaseButton } from "./BaseButton";
 
 interface ClickableProps extends BaseButtonProps {
   onClick: () => void;
 }
 
-export const Clickable: React.FC<ClickableProps> = ({
+export const Clickable: FC<ClickableProps> = ({
   onClick,
   ...baseButtonProps
 }) => {

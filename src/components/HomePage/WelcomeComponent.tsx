@@ -1,13 +1,12 @@
-import React from "react";
+import { FC } from "react";
 import { faPizzaSlice } from "@fortawesome/free-solid-svg-icons";
-import { Brand, Navigatable } from "@/components/Common";
-import Image from "next/image";
+import { Brand, Navigatable } from "../Common";
 
 const imageSize = 300;
 
-export const WelcomeComponent: React.FC<{}> = () => {
+export const WelcomeComponent: FC<{}> = () => {
   return (
-    <div className="flex items-center justify-center flex-wrap space-x-10 py-10">
+    <div className="flex items-center justify-center flex-wrap space-x-10 py-12">
       <div className="flex flex-col">
         <div className="mr-3 flex items-center text-3xl">
           <span className="mr-2 font-semibold">Welcome to</span>
@@ -22,17 +21,11 @@ export const WelcomeComponent: React.FC<{}> = () => {
           icon={faPizzaSlice}
           navigateTo="/"
           textBold
-          dark
+          fill
+          elevated
         />
       </div>
-      <Image
-        className="w-auto h-auto"
-        height={imageSize}
-        width={imageSize}
-        src="/man.jpg"
-        priority
-        alt=""
-      />
+      <img height={imageSize} width={imageSize} src="/man.jpg" />
     </div>
   );
 };

@@ -1,17 +1,17 @@
-import React from "react";
-import Link from "next/link";
+import { FC } from "react";
 import { BaseButtonProps, BaseButton } from "./BaseButton";
+import { Link } from "react-router-dom";
 
 interface NavigatableProps extends BaseButtonProps {
   navigateTo: string;
 }
 
-export const Navigatable: React.FC<NavigatableProps> = ({
+export const Navigatable: FC<NavigatableProps> = ({
   navigateTo,
   ...baseButtonProps
 }) => {
   return (
-    <Link href={navigateTo}>
+    <Link to={navigateTo}>
       <BaseButton {...baseButtonProps} />
     </Link>
   );
