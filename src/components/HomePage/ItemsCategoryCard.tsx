@@ -1,5 +1,4 @@
-import { FC } from "react";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { FC, JSX } from "react";
 import { Navigatable } from "../Common";
 
 const imageSize = 200;
@@ -7,7 +6,7 @@ const imageSize = 200;
 interface ItemsCategoryCardProps {
   imageLink: string;
   text: string;
-  icon: IconDefinition;
+  icon: JSX.Element;
 }
 
 export const ItemsCategoryCard: FC<ItemsCategoryCardProps> = ({

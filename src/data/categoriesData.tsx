@@ -6,36 +6,37 @@ import {
   faMugHot,
   faPizzaSlice,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const categoriesData = [
   {
     name: "Burgers",
-    icon: faBurger,
+    icon: <FontAwesomeIcon icon={faBurger} />,
     imageLink: "/burger.jpeg",
   },
   {
     name: "Coffees",
-    icon: faMugHot,
+    icon: <FontAwesomeIcon icon={faMugHot} />,
     imageLink: "/coffee.png",
   },
   {
     name: "Sandwiches",
-    icon: faBreadSlice,
+    icon: <FontAwesomeIcon icon={faBreadSlice} />,
     imageLink: "/sandwich.jpeg",
   },
   {
     name: "Pizzas",
-    icon: faPizzaSlice,
+    icon: <FontAwesomeIcon icon={faPizzaSlice} />,
     imageLink: "/pizza.jpg",
   },
   {
     name: "Juices",
-    icon: faMartiniGlassCitrus,
+    icon: <FontAwesomeIcon icon={faMartiniGlassCitrus} />,
     imageLink: "/juice.jpeg",
   },
   {
     name: "Dessets",
-    icon: faCandyCane,
+    icon: <FontAwesomeIcon icon={faCandyCane} />,
     imageLink: "/dessert.jpeg",
   },
 ];

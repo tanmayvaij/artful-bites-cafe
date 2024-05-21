@@ -6,7 +6,7 @@ export const RootLayout = () => {
   return (
     <>
       <Navbar data={navbarNavigationData} />
-      <main className="py-20">
+      <main className="py-20 min-h-screen">
         <Outlet />
       </main>
       <Footer />

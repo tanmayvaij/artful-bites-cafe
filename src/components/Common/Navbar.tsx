@@ -1,13 +1,12 @@
-import { FC } from "react";
+import { FC, JSX } from "react";
 import { Brand, Navigatable } from "./";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 const userImageSize = 40;
 
 interface NavbarNavigationProps {
   navigateTo: string;
   text?: string;
-  icon?: IconDefinition;
+  icon?: JSX.Element;
 }
 
 interface NavbarProps {

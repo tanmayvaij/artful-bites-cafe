@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { faPizzaSlice } from "@fortawesome/free-solid-svg-icons";
 import { Brand, Navigatable } from "../Common";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const imageSize = 300;
 
@@ -13,12 +14,12 @@ export const WelcomeComponent: FC<{}> = () => {
           <Brand size="lg" />
         </div>
         <h2 className="text-2xl font-semibold mb-10">
-          We Serve you with happiness.
+          We serve you with happiness.
         </h2>
         <Navigatable
           size="lg"
           text="Order Now"
-          icon={faPizzaSlice}
+          icon={<FontAwesomeIcon icon={faPizzaSlice} />}
           navigateTo="/"
           textBold
           fill
